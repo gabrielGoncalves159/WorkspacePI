@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>New Cake</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Vendor CSS Files -->
+  <link href="/projeto-new-cake/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/projeto-new-cake/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link type="text/css" href="/projeto-new-cake/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="/projeto-new-cake/css/jquery-ui.css">
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <script src="/projeto-new-cake/js/usuario.js"></script>
+  <script src="/projeto-new-cake/js/admin.js"></script>
+  <script src="/projeto-new-cake/js/jquery-ui.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
+  <script src="/projeto-new-cake/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  
+</head>
+<body>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="header fixed-top d-flex align-items-center">
+    </header>
+
+    <!-- ======= Sidebar ======= -->
+    <aside id="sidebar" class="sidebar">
+    </aside><!-- End Sidebar-->
+
+    <main id="main" class="main">
+        <h1>CADASTRO DE USUÁRIO</h1>
+
+        <div class="form-usuario">
+
+            <input type="text" name="codigo" class="input-codigo" placeholder="Código">             
+            <input type="text" name="nome" class="input-nome" placeholder="Nome">
+
+            <button onclick="NEWCAKE.modalCadastrarUsuario()" class="button-usuario button-pesquisa" >Pesquisar</button>
+            <button class="button-usuario button-cadastrar" >Cadastrar</button>
+        </div>
+
+        <div div="modalCadastroUsuario" class="modalCadastrarUsuario">
+            <form name="frmCadastrarUsuario" id="cadastrarUsuario">
+                <table>
+                    <tr>
+                        <th>CADASTRAR USUÁRIO</th>
+                        <td>
+                            <label for="name">Nome:</label>
+                            <input type="text" name="nome">
+                            <label for="name">Tipo de Usuário:</label>
+                            <input type="text" name="tipo-usuario">
+                            <label for="name">CPF:</label>
+                            <input type="text" name="cpf">
+                            <label for="name">Telefone:</label>
+                            <input type="text" name="telefone">
+                            <label for="name">Senha:</label>
+                            <input type="text" name="status">
+    
+                            <button>Cancelar</button>
+                            <button>Salvar</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        
+    </main><!-- End #main -->
+
+    <footer id="footer" class="footer">
+    </footer><!-- End Footer -->  
+    
+</body>
+</html>
