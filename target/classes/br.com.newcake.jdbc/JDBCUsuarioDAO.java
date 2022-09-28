@@ -102,10 +102,12 @@ public class JDBCUsuarioDAO implements UsuarioDAO {
         return true;
     }
 
-    public List<JsonObject> listarUsuarios(int id)
-    {
-        String sql = "SELECT  id, nome, CPF, telefone FROM usuario"
-                    + "WHERE id_usuario = ";
-    }
+    // public List<JsonObject> listarUsuarios(int id)
+    // {
+    //     String sql = "SELECT  id, nome, CPF, telefone FROM usuario"
+    //                 + "WHERE id_usuario = ?";
+
+        
+    // }
 
 }

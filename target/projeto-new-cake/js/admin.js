@@ -20,4 +20,22 @@ $(document).ready(function() {
         });
     }
 
+    NEWCAKE.modalAviso = function(texto) {
+
+        var	modal= {
+        title: "Aviso!",
+        height: 250,
+        width: 400,
+        modal: true,
+        buttons: {
+            "OK": function(){
+             $(this).dialog("close");
+             }
+        }
+        };
+        $("#modalAviso").html(texto);
+        $("#modalAviso").dialog(modal);
+
+    }
+
 })

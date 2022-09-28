@@ -36,7 +36,7 @@ public class UsuarioRest extends UtilRest {
             Conexao conect = new Conexao();
             Connection conexao = conect.openConnection();
             JDBCUsuarioDAO jdbcUsuario = new JDBCUsuarioDao(conexao);
-            boolean retorno = jdbcUsuario.inserir(usuario);
+            boolean retorno = jdbcUsuario.inserir(parametro);
 
             var msg = "";
 

@@ -9,22 +9,23 @@
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Vendor CSS Files -->
+  <!-- Bootstrap CSS Files -->
   <link href="/projeto-new-cake/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/projeto-new-cake/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
   <link type="text/css" href="/projeto-new-cake/css/style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/projeto-new-cake/css/jquery-ui.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
 
+  <!-- Tamplate JavaScript File -->
   <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
-  <script src="/projeto-new-cake/js/usuario.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
   <script src="/projeto-new-cake/js/admin.js"></script>
-  <script src="/projeto-new-cake/js/jquery-ui.js"></script>
+  <script src="/projeto-new-cake/js/usuario.js"></script>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/tinymce.min.js"></script>
   <script src="/projeto-new-cake/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  
+
 </head>
 <body>
 
@@ -44,29 +45,23 @@
             <input type="text" name="codigo" class="input-codigo" placeholder="Código">             
             <input type="text" name="nome" class="input-nome" placeholder="Nome">
 
-            <button onclick="NEWCAKE.modalCadastrarUsuario()" class="button-usuario button-pesquisa" >Pesquisar</button>
-            <button class="button-usuario button-cadastrar" >Cadastrar</button>
+            <button class="button-usuario button-pesquisa" >Pesquisar</button>
+            <button type="button" onclick="NEWCAKE.usuario.modalCadastrarUsuario()" class="button-usuario button-cadastrar" >Cadastrar</button>
         </div>
 
-        <div div="modalCadastroUsuario" class="modalCadastrarUsuario">
+        <div id="modalCadastroUsuario" class="modalCadastrarUsuario">
             <form name="frmCadastrarUsuario" id="cadastrarUsuario">
                 <table>
                     <tr>
-                        <th>CADASTRAR USUÁRIO</th>
                         <td>
-                            <label for="name">Nome:</label>
-                            <input type="text" name="nome">
-                            <label for="name">Tipo de Usuário:</label>
-                            <input type="text" name="tipo-usuario">
-                            <label for="name">CPF:</label>
-                            <input type="text" name="cpf">
-                            <label for="name">Telefone:</label>
-                            <input type="text" name="telefone">
-                            <label for="name">Senha:</label>
-                            <input type="text" name="status">
+                            <input type="text" name="nome" placeholder="Nome">
+                            <input type="text" name="tipo-usuario" placeholder="Tipo De Usuário">
+                            <input type="text" name="cpf" placeholder="CPF">
+                            <input type="text" name="telefone" placeholder="Telefone">
+                            <input type="text" name="senha" placeholder="Senha">
     
-                            <button>Cancelar</button>
-                            <button>Salvar</button>
+                            <!-- <button type="button" class="button-modal cancelar">Cancelar</button>
+                            <button type="button" class="button-modal salvar">Salvar</button> -->
                         </td>
                     </tr>
                 </table>
@@ -80,3 +75,4 @@
     
 </body>
 </html>
+

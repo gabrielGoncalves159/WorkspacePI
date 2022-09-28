@@ -1,19 +1,21 @@
 NEWCAKE.usuario = new Object();
 
-$(document).ready(function(){
+$(document).ready(function() {
 
     NEWCAKE.usuario.modalCadastrarUsuario = function() {
 
-        var modalCadastrarUsuario = {
-            title: "Cadastrar Marca",
-            width: 400,
-            height: 300,
+        var modalCadastrarUsuario = {   
+            title: "Cadastrar Usuário",
+            width: 500,
+            height: 400,
             modal: true,
             buttons: {
-                "Cancelar": function(){},
-                "Salvar": function(){
+                Salvar: function(){
 
                     NEWCAKE.usuario.cadastrarUsuario()
+                },
+                Cancelar: function() {
+                    $( this ).dialog( "close" )
                 },
             }
         };
